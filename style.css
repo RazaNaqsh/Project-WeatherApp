@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 *,
 *::after,
 *::before {
@@ -13,6 +14,7 @@ body {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  font-family: "Nunito", sans-serif;
 }
 
 header {
