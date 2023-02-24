@@ -12,7 +12,7 @@ async function getWeather(place = "London") {
 		const respData = await resp.json();
 
 		const locationName = respData.name;
-		// console.log(respData.name);
+		// console.log(respData.wind);
 
 		const weatherMainData = respData.main;
 		// console.log(weatherMainData);
@@ -20,7 +20,12 @@ async function getWeather(place = "London") {
 		const weatherSubData = respData.weather[0];
 		// console.log(weatherSubData);
 
-		displayWeather.showData(locationName, weatherMainData, weatherSubData);
+		displayWeather.showData(
+			respData,
+			locationName,
+			weatherMainData,
+			weatherSubData
+		);
 	} catch (err) {
 		console.log(err);
 		console.log("This is from catch: error");
