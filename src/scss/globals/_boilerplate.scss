@@ -7,16 +7,16 @@
 }
 body {
 	min-height: 100vh;
-	background: url("/src/assets/glowingFlowerBg.jpg");
-	background-color: #1e293b;
-	background-blend-mode: difference;
+	// background: url("/src/assets/glowingFlowerBg.jpg");
+	// background-color: #1e293b;
+	// background-blend-mode: difference;
 
-	// background-image: linear-gradient(
-	// 		to right,
-	// 		rgba(black, 0.4),
-	// 		rgba(black, 0.4)
-	// 	),
-	// 	url("/src/assets/glowingFlowerBg.jpg");
+	background-image: linear-gradient(
+			to right,
+			rgba(black, 0.4),
+			rgba(black, 0.4)
+		),
+		url("/src/assets/glowingFlowerBg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
