@@ -37,6 +37,7 @@ async function getLocation(e) {
 		e.preventDefault();
 		// console.log(location.value);
 		getWeather(location.value);
+		location.value = "";
 	}
 }
 
@@ -44,7 +45,7 @@ export default (function weather() {
 	function initialize() {
 		const submitBtn = document.getElementById("submit");
 		submitBtn.addEventListener("click", getLocation);
-		getWeather("New York");
+		getWeather("Medina");
 	}
 	return {
 		initialize,
