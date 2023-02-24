@@ -29,22 +29,38 @@
                 </form>
             </div>
         </header>
-        <main class="weather">
-            <section class="weather__mainDetails">
-                <div class="weather__mainDetails__textSection">
+        <section class="weatherMain">
+            <div class="weatherMain__Details">
+                <div class="weatherMain__Details__textSection">
                     <h1 id="currentWeather">Broken Clouds</h1>
                     <h2 id="place">Madina</h2>
                     <p id="currentDate">24 Feb 2023</p>
                     <p id="currentTime">2:20 pm</p>
                 </div>
-                <div class="weather__mainDetails__temperature">
+                <div class="weatherMain__Details__temperature">
                     <h1 id="temperature">24 C</h1>
                 </div>
-            </section>
-            <section class="weather__subDetails">
+            </div>
+        </section>
+        <section class="weatherSub">
+            <div>
+                <p>Feels Like</p>
+                <h3 id="feelsLike"></h3>
+            </div>
+            <div>
+                <p>Humidity</p>
+                <h3 id="humidity"></h3>
+            </div>
+            <!-- <div>
+                <p>Pressure</p>
+                <h3 class="pressure"></h3>
+            </div> -->
+            <div>
+                <p>Wind Speed</p>
+                <h3 id="windSpeed"></h3>
+            </div>
+        </section>
 
-            </section>
-        </main>
     </div>
 
 </body>

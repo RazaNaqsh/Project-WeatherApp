@@ -100,39 +100,60 @@ button:hover {
 
 .container {
   margin-inline: auto;
-  max-width: 85vw;
+  margin-top: 6rem;
+  max-width: 80vw;
   min-height: 80vh;
-  margin: 5rem 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.weather {
+.weatherMain {
   color: white;
 }
-.weather__mainDetails {
+.weatherMain__Details {
   height: 100%;
   width: 100%;
 }
-.weather__mainDetails__textSection {
+.weatherMain__Details__textSection {
   margin-bottom: 2rem;
 }
-.weather__mainDetails__textSection h1 {
+.weatherMain__Details__textSection h1 {
+  color: #bae6fd;
   font-size: 3rem;
 }
-.weather__mainDetails__textSection h2 {
+.weatherMain__Details__textSection h2 {
   font-size: 2rem;
   color: #bbf7d0;
 }
-.weather__mainDetails__textSection p {
+.weatherMain__Details__textSection p {
   font-size: 1.2rem;
 }
-.weather__mainDetails__temperature h1 {
+.weatherMain__Details__temperature h1 {
   font-size: 3.5rem;
   font-weight: 900;
 }
-.weather__subDetails {
+.weatherMain__subDetails {
   height: 100%;
   width: 100%;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.weatherSub {
+  margin-top: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+}
+.weatherSub p {
+  font-size: 1.1rem;
+  text-align: right;
+}
+.weatherSub h3 {
+  font-size: 1.8rem;
+  margin-top: 0.2rem;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
