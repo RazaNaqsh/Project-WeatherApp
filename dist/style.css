@@ -130,6 +130,11 @@ button:hover {
 .weatherMain__Details__textSection {
   margin-bottom: 2rem;
 }
+@media (max-width: 600px) {
+  .weatherMain__Details__textSection {
+    margin-bottom: 1rem;
+  }
+}
 .weatherMain__Details__textSection h1 {
   color: #bae6fd;
   font-size: 3rem;

@@ -9,6 +9,9 @@
 
 		&__textSection {
 			margin-bottom: 2rem;
+			@media (max-width: 600px) {
+				margin-bottom: 1rem;
+			}
 			h1 {
 				color: #bae6fd;
 				font-size: 3rem;
