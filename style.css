@@ -8,16 +8,19 @@
 
 body {
   min-height: 100vh;
-  background: url("/src/assets/glowingFlowerBg.jpg");
-  background-color: #1e293b;
-  background-blend-mode: difference;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/src/assets/glowingFlowerBg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 
-.wrapper {
+header {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.formWrapper {
   overflow: hidden;
 }
 
@@ -93,4 +96,32 @@ button {
 button:hover {
   color: rgb(60, 35, 153);
   background-color: white;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 85vw;
+  min-height: 80vh;
+  margin: 5rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.weather {
+  color: white;
+}
+.weather__mainDetails {
+  height: 100%;
+  width: 100%;
+}
+.weather__mainDetails__textSection {
+  margin-bottom: 1rem;
+}
+.weather__mainDetails h1 {
+  font-size: 2rem;
+}
+.weather__subDetails {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
