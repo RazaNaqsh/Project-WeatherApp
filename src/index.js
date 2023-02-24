@@ -1,6 +1,6 @@
 import "./scss/style.scss";
 import Weather from "./Weather";
 
-Weather("Jamshedpur");
+Weather.getWeather();
 
 console.log("webpack here");
