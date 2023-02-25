@@ -9,6 +9,7 @@ https://razanaqsh.github.io/Project-WeatherApp/
 ### Features
 
 - Ability to search for a specific location
+- Mobile Responsiveness added
 
 ### Technologies
 
