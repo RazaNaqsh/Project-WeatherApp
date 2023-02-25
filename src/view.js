@@ -18,7 +18,8 @@ function displayName(name) {
 }
 
 function displayCurrentWeather(subData) {
-	currentWeather.textContent = `${subData.main} (${subData.description})`;
+	currentWeather.innerHTML = `${subData.main} <small>(${subData.description})</small>`;
+	// currentWeather.innerHTML = `${subData.main} (${subData.description})`;
 }
 
 function displayTemp(data) {
