@@ -16,6 +16,18 @@ body {
   overflow: hidden;
   font-family: "Nunito", sans-serif;
 }
+@media (max-width: 370px) {
+  body {
+    min-height: 130vh;
+    background: url("/src/assets/glowingFlowerBg.jpg");
+    background-color: #1e293b;
+    background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: center;
+  }
+}
+
 header {
   grid-row: 2/3;
   grid-column: 1/2;
@@ -150,6 +162,7 @@ button:hover {
 }
 .weatherMain__Details__textSection h2 {
   font-size: 2rem;
+  letter-spacing: 2px;
   color: #bbf7d0;
 }
 @media (max-width: 600px) {
@@ -162,6 +175,7 @@ button:hover {
 }
 .weatherMain__Details__textSection p {
   font-size: 1.2rem;
+  font-weight: 700;
 }
 @media (max-width: 600px) {
   .weatherMain__Details__textSection p {
@@ -170,7 +184,7 @@ button:hover {
 }
 .weatherMain__Details__temperature h1 {
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 @media (max-width: 600px) {
   .weatherMain__Details__temperature h1 {
@@ -195,6 +209,7 @@ button:hover {
 }
 .weatherSub p {
   font-size: 1.1rem;
+  font-weight: 700;
   text-align: right;
 }
 @media (max-width: 600px) {
