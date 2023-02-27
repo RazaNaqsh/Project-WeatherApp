@@ -27,3 +27,4 @@ https://razanaqsh.github.io/Project-WeatherApp/
 
 - Learned to use basic API functionality
 - Learned basic error handling
+- Learned to make Mobile Responsive

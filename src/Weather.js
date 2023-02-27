@@ -27,8 +27,9 @@ async function getWeather(place = "London") {
 			weatherSubData
 		);
 	} catch (err) {
+		// eslint-disable-next-line
 		console.log(err);
-		console.log("This is from catch: error");
+		// console.log("This is from catch: error");
 		errorMsg.textContent = "Enter Valid City, State or Country!";
 	}
 }
