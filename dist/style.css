@@ -43,6 +43,11 @@ header {
   margin: 1rem;
   flex-direction: column;
 }
+@media (max-width: 600px) {
+  .flex_box {
+    margin: 0.5rem;
+  }
+}
 
 .box {
   width: 50px;
@@ -82,6 +87,11 @@ input {
   -webkit-hyphens: auto;
           hyphens: auto;
   z-index: 1;
+}
+@media (max-width: 600px) {
+  input {
+    margin: 0;
+  }
 }
 
 label {
@@ -123,7 +133,7 @@ button:hover {
 @media (max-width: 600px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 29vh);
     gap: 0.5rem;
     max-width: 100vw;
     margin: 0 0 0 0;
@@ -157,7 +167,7 @@ button:hover {
 }
 @media (max-width: 600px) {
   .weatherMain__Details__textSection h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 .weatherMain__Details__textSection h2 {
@@ -167,7 +177,7 @@ button:hover {
 }
 @media (max-width: 600px) {
   .weatherMain__Details__textSection h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 .weatherMain__Details__textSection .dateTime {
@@ -224,6 +234,6 @@ button:hover {
 }
 @media (max-width: 600px) {
   .weatherSub h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */
