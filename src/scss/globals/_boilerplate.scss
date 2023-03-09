@@ -8,9 +8,6 @@
 }
 body {
 	min-height: 100vh;
-	// background: url("/src/assets/glowingFlowerBg.jpg");
-	// background-color: #1e293b;
-	// background-blend-mode: difference;
 
 	background-image: linear-gradient(
 			to right,
@@ -21,8 +18,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	overflow-x: hidden;
+
 	font-family: "Nunito", sans-serif;
+	overflow: hidden;
+
+	// * For very small screens, will show different bg
 
 	@media (max-width: 370px) {
 		min-height: 130vh;

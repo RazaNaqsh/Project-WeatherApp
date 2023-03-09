@@ -13,8 +13,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow-x: hidden;
   font-family: "Nunito", sans-serif;
+  overflow: hidden;
 }
 @media (max-width: 370px) {
   body {

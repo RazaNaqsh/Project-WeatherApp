@@ -2,34 +2,19 @@ import displayWeather from "./view";
 
 const errorMsg = document.getElementById("Error");
 
-async function getWeather(place = "London") {
+async function getWeather(place = "Medina") {
 	try {
 		const resp = await fetch(
 			`https://api.openweathermap.org/data/2.5/weather?q=${place}&units=metric&appid=c71a2bee0691fb692d156e4c950c6d61`
 		);
-		// console.log(resp);
 
 		const respData = await resp.json();
 
-		const locationName = respData.name;
-		// console.log(respData.wind);
+		// * This sends whole data to display module
 
-		const weatherMainData = respData.main;
-		// console.log(weatherMainData);
-
-		const weatherSubData = respData.weather[0];
-		// console.log(weatherSubData);
-
-		displayWeather.showData(
-			respData,
-			locationName,
-			weatherMainData,
-			weatherSubData
-		);
+		displayWeather.showData(respData);
+		// space
 	} catch (err) {
-		// eslint-disable-next-line
-		console.log(err);
-		// console.log("This is from catch: error");
 		errorMsg.textContent = "Enter Valid City, State or Country!";
 	}
 }
