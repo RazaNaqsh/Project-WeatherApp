@@ -22,6 +22,7 @@ function displayCurrentWeather(subData) {
 
 function displayTemp(data) {
 	const { temp } = data;
+	// * this formats the temperature in celsius symbol
 	const degrees = new Intl.NumberFormat("en-US", {
 		style: "unit",
 		unit: "celsius",
@@ -37,6 +38,7 @@ function displayDateTime() {
 }
 
 function displaySubData(main, wind) {
+	// * this formats the temperature in celsius symbol
 	const degrees = new Intl.NumberFormat("en-US", {
 		style: "unit",
 		unit: "celsius",
