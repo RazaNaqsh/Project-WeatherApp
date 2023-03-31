@@ -6,6 +6,11 @@
 
 https://razanaqsh.github.io/Project-WeatherApp/
 
+## Overview:
+
+![weatherApp](https://user-images.githubusercontent.com/108403182/229100333-90110fb3-a0a7-4472-87e5-0f39e656e732.png)
+
+
 ### Features
 
 - Ability to search for a specific location
